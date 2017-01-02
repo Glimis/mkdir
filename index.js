@@ -1,7 +1,7 @@
 var fs=require('fs'),
     path=require('path');
 
-export function mkdir(dirpath,dirname){  
+module.exports= function mkdir(dirpath,dirname){  
         //第一次
         if(typeof dirname === "undefined"){   
             if(fs.existsSync(dirpath)){  
